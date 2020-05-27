@@ -6,7 +6,7 @@ package slack
 import (
 	"context"
 	"github.com/whosonfirst/go-webhookd/v2"
-	"github.com/whosonfirst/go-webhookd/v2/receivers"	
+	"github.com/whosonfirst/go-webhookd/v2/receivers"
 	"io/ioutil"
 	"net/http"
 )

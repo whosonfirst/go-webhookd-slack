@@ -3,7 +3,7 @@ package slack
 import (
 	"context"
 	"github.com/whosonfirst/go-webhookd/v2"
-	"github.com/whosonfirst/go-webhookd/v2/dispatchers"	
+	"github.com/whosonfirst/go-webhookd/v2/dispatchers"
 	"github.com/whosonfirst/go-writer-slackcat"
 	"net/url"
 )

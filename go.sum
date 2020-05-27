@@ -23,6 +23,7 @@ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym
 github.com/GoogleCloudPlatform/cloudsql-proxy v0.0.0-20191009163259-e802c2cb94ae/go.mod h1:mjwGPas4yKduTyubHvD1Atl9r1rUq8DfVy+gkVvZ+oo=
 github.com/aaronland/go-aws-session v0.0.4 h1:GddU3E4pXAm3JWVjcdgyYhdGaWSRtiZl6Iwwt7+OLcU=
 github.com/aaronland/go-aws-session v0.0.4/go.mod h1:1OD+6F7D052nJMkz2tLx5FvMVpreAVU0ye9ur5O+nno=
+github.com/aaronland/go-chicken v0.2.1 h1:I61mIO6liaJIvHjvZK/SkrnUIeWbFFiujHKUuUY+ANU=
 github.com/aaronland/go-chicken v0.2.1/go.mod h1:pvXQ3o8IYrpbfuKU1SNRm/gsNl8w5EK/Cy4L6KAvCwU=
 github.com/aaronland/go-http-server v0.0.3/go.mod h1:i7CG6Q9iRKZX4qonIYr73GtJpVHV8T31eZ4Ug44zOTU=
 github.com/aaronland/go-roster v0.0.1/go.mod h1:AcovpxlG1XxJxX2Fjqlm63fEIBhCjEIBV4lP87FZDmI=
@@ -30,6 +31,7 @@ github.com/aaronland/go-roster v0.0.2 h1:2Fu7v4VQLRLRL/Zgr6R9S5JxsW75Ab/K88QtMVX
 github.com/aaronland/go-roster v0.0.2/go.mod h1:AcovpxlG1XxJxX2Fjqlm63fEIBhCjEIBV4lP87FZDmI=
 github.com/aaronland/go-string v0.1.1 h1:btdr18owWCBN14ojKx3p+PBCKfm9qIggYEguPLUb2wE=
 github.com/aaronland/go-string v0.1.1/go.mod h1:2aMIWdTqk63jZsaLLy+p9dsB1MDRqx4sHYoLtkwyYUo=
+github.com/aaronland/go-ucd v0.0.0-20190520134908-684059ca9156 h1:SsNFRFNm6Gn8DgDZIcImpIXtjeH1Ak2s1SLoVby0dwg=
 github.com/aaronland/go-ucd v0.0.0-20190520134908-684059ca9156/go.mod h1:DoKBDoY4iuDSNErkKy6n1SRdUEOLwTm2gy7X3GtUQaI=
 github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7/go.mod h1:HhzjNA0EjUWcwHTUMwqrpeAdIF3gRmpH0HpWx1hYJSc=
 github.com/aws/aws-lambda-go v1.9.0/go.mod h1:zUsUQhAUjYzR8AuduJPCfhBuKWUaDbQiPOG+ouzmE1A=
@@ -42,6 +44,7 @@ github.com/aws/aws-sdk-go v1.31.6 h1:nKjQbpXhdImctBh1e0iLg9iQW/X297LPPuY/9f92R2k
 github.com/aws/aws-sdk-go v1.31.6/go.mod h1:5zCpMtNQVjRREroY7sYe8lOMRSxkhG6MZveU8YkpAk0=
 github.com/census-instrumentation/opencensus-proto v0.2.0/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
+github.com/cooperhewitt/go-ucd v0.0.0-20170323200852-c4101e1ef9a6 h1:P3t+wrVJz+Cey5VNf/8SYv56kniN8+feDX8dUgSRsA0=
 github.com/cooperhewitt/go-ucd v0.0.0-20170323200852-c4101e1ef9a6/go.mod h1:76WUZ+6G1smA8yhoi9mNx95mpMvIPIpeEDAZrEFRK30=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
