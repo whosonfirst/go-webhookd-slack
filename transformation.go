@@ -6,8 +6,8 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	"github.com/whosonfirst/go-webhookd/v2"
-	"github.com/whosonfirst/go-webhookd/v2/transformations"
+	"github.com/whosonfirst/go-webhookd/v3"
+	"github.com/whosonfirst/go-webhookd/v3/transformation"
 	_ "log"
 	"strings"
 )
@@ -15,7 +15,7 @@ import (
 func init() {
 
 	ctx := context.Background()
-	err := transformations.RegisterTransformation(ctx, "slacktext", NewSlackTextTransformation)
+	err := transformation.RegisterTransformation(ctx, "slacktext", NewSlackTextTransformation)
 
 	if err != nil {
 		panic(err)

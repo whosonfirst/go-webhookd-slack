@@ -1,12 +1,8 @@
-package slack
-
-// This has not been fully tested with an actual Slack message yet
-// (20161016/thisisaaronland)
+package receiver
 
 import (
 	"context"
 	"github.com/whosonfirst/go-webhookd/v3"
-	"github.com/whosonfirst/go-webhookd/v3/receiver"
 	"io/ioutil"
 	"net/http"
 )
@@ -14,24 +10,24 @@ import (
 func init() {
 
 	ctx := context.Background()
-	err := receiver.RegisterReceiver(ctx, "slack", NewSlackReceiver)
+	err := RegisterReceiver(ctx, "insecure", NewInsecureReceiver)
 
 	if err != nil {
 		panic(err)
 	}
 }
 
-type SlackReceiver struct {
+type InsecureReceiver struct {
 	webhookd.WebhookReceiver
 }
 
-func NewSlackReceiver(ctx context.Context, uri string) (webhookd.WebhookReceiver, error) {
+func NewInsecureReceiver(ctx context.Context, uri string) (webhookd.WebhookReceiver, error) {
 
-	slack := SlackReceiver{}
-	return slack, nil
+	wh := InsecureReceiver{}
+	return wh, nil
 }
 
-func (sl SlackReceiver) Receive(ctx context.Context, req *http.Request) ([]byte, *webhookd.WebhookError) {
+func (wh InsecureReceiver) Receive(ctx context.Context, req *http.Request) ([]byte, *webhookd.WebhookError) {
 
 	select {
 	case <-ctx.Done():

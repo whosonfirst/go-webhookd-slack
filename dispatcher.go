@@ -2,8 +2,8 @@ package slack
 
 import (
 	"context"
-	"github.com/whosonfirst/go-webhookd/v2"
-	"github.com/whosonfirst/go-webhookd/v2/dispatchers"
+	"github.com/whosonfirst/go-webhookd/v3"
+	"github.com/whosonfirst/go-webhookd/v3/dispatcher"
 	"github.com/whosonfirst/go-writer-slackcat"
 	"net/url"
 )
@@ -11,7 +11,7 @@ import (
 func init() {
 
 	ctx := context.Background()
-	err := dispatchers.RegisterDispatcher(ctx, "slack", NewSlackDispatcher)
+	err := dispatcher.RegisterDispatcher(ctx, "slack", NewSlackDispatcher)
 
 	if err != nil {
 		panic(err)

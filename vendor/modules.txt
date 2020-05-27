@@ -1,0 +1,20 @@
+# github.com/aaronland/go-chicken v0.2.1
+github.com/aaronland/go-chicken
+github.com/aaronland/go-chicken/emoji
+github.com/aaronland/go-chicken/strings
+# github.com/aaronland/go-roster v0.0.2
+github.com/aaronland/go-roster
+# github.com/aaronland/go-ucd v0.0.0-20190520134908-684059ca9156
+github.com/aaronland/go-ucd
+# github.com/cooperhewitt/go-ucd v0.0.0-20170323200852-c4101e1ef9a6
+github.com/cooperhewitt/go-ucd/unicodedata
+github.com/cooperhewitt/go-ucd/unihan
+# github.com/whosonfirst/go-webhookd/v3 v3.0.0
+github.com/whosonfirst/go-webhookd/v3
+github.com/whosonfirst/go-webhookd/v3/dispatcher
+github.com/whosonfirst/go-webhookd/v3/receiver
+github.com/whosonfirst/go-webhookd/v3/transformation
+# github.com/whosonfirst/go-writer-slackcat v0.0.0-20151205020711-ad3c7f1d3b0a
+github.com/whosonfirst/go-writer-slackcat
+# github.com/whosonfirst/slackcat v0.0.0-20170719225154-b769f32185b5
+github.com/whosonfirst/slackcat
