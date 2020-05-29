@@ -135,6 +135,8 @@ github.com/whosonfirst/go-webhookd/v2 v2.0.0 h1:gtHjAuDztQbG9Dogprh4C+R8XlIOCe8Q
 github.com/whosonfirst/go-webhookd/v2 v2.0.0/go.mod h1:LYG6YWSwwtwJqaTtVIjZRLi7zyWZrtmRmkMv5m/kJjU=
 github.com/whosonfirst/go-webhookd/v3 v3.0.0 h1:wnBKaOU75HAYdS29R8BHpPb/pl24TiX2oFGPts0+kqo=
 github.com/whosonfirst/go-webhookd/v3 v3.0.0/go.mod h1:a4RlfZkEEgs2HZV73IvxdD6huHQ5gWoYeuaX8JRHOAI=
+github.com/whosonfirst/go-webhookd/v3 v3.0.1 h1:k+1PloYWuyPKfTkIr+q8eoMdy2AzuAUV/ec72vCi3ZA=
+github.com/whosonfirst/go-webhookd/v3 v3.0.1/go.mod h1:a4RlfZkEEgs2HZV73IvxdD6huHQ5gWoYeuaX8JRHOAI=
 github.com/whosonfirst/go-writer-slackcat v0.0.0-20151205020711-ad3c7f1d3b0a h1:nJgnDwmCoGLWSaBLoc9X9qVFx+GAgBHvAWqH6oaJspo=
 github.com/whosonfirst/go-writer-slackcat v0.0.0-20151205020711-ad3c7f1d3b0a/go.mod h1:CazVCa8GiBeCf0xs/VP1PQvimdQLh+ZaHoAipAeFNVQ=
 github.com/whosonfirst/slackcat v0.0.0-20170719225154-b769f32185b5 h1:ItRj4FLPW5TtRj6Hu/LUkTCkKNbGdJLAFyiCATKL2Bc=
