@@ -43,8 +43,24 @@ slacktext://
 The `Slack` dispatcher will send messages to a Slack channel. It is defined as a URI string in the form of:
 
 ```
+slack://?webhook={SLACK_WEBHOOK_URI}&channel={SLACK_CHANNEL}
+```
+
+#### Parameters
+
+| Name | Value | Description | Required |
+| --- | --- | --- | --- |
+| webhook | string | A valid Slack Webhook URL. | yes |
+| channel | string | A valid Slack channel name | yes |
+
+
+Earlier versions of this package used the [whosonfirst/slackcat](https://github.com/whosonfirst/slackcat) package to send Slack messages which necessitated that `slack://` dispatcher URLs be in the form of:
+
+```
 slack://{PATH_TO_SLACKCAT.CONFG}
 ```
+
+In order to preserve backwards compatibility this URL form will continue to honoured if a `slack://` dispatcher URL does not contain a `webhook` or `channel` query parameter.
 
 #### Properties
 
@@ -57,3 +73,4 @@ _Eventually you will be able to specify a plain-vanilla Slack Webhook URL but no
 ## See also
 
 * https://github.com/whosonfirst/go-webhookd
+* https://github.com/sfomuseum/go-slack

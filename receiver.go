@@ -7,7 +7,7 @@ import (
 	"context"
 	"github.com/whosonfirst/go-webhookd/v3"
 	"github.com/whosonfirst/go-webhookd/v3/receiver"
-	"io/ioutil"
+	"io"
 	"net/http"
 )
 
@@ -49,7 +49,7 @@ func (sl SlackReceiver) Receive(ctx context.Context, req *http.Request) ([]byte,
 		return nil, err
 	}
 
-	body, err := ioutil.ReadAll(req.Body)
+	body, err := io.ReadAll(req.Body)
 
 	if err != nil {
 

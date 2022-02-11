@@ -2,10 +2,14 @@ package slack
 
 import (
 	"context"
+	"encoding/json"
+	"fmt"
+	"github.com/sfomuseum/go-slack/writer"
 	"github.com/whosonfirst/go-webhookd/v3"
 	"github.com/whosonfirst/go-webhookd/v3/dispatcher"
-	"github.com/whosonfirst/go-writer-slackcat"
+	"io"
 	"net/url"
+	"os"
 )
 
 func init() {
@@ -18,9 +22,17 @@ func init() {
 	}
 }
 
+// For backwards compatibility
+
+type SlackcatConfig struct {
+	WebhookUrl string `json:"webhook_url"`
+	Channel    string `json:"channel"`
+	Username   string `json:"username"`
+}
+
 type SlackDispatcher struct {
 	webhookd.WebhookDispatcher
-	writer *slackcat.Writer
+	writer io.Writer
 }
 
 func NewSlackDispatcher(ctx context.Context, uri string) (webhookd.WebhookDispatcher, error) {
@@ -28,19 +40,49 @@ func NewSlackDispatcher(ctx context.Context, uri string) (webhookd.WebhookDispat
 	u, err := url.Parse(uri)
 
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("Failed to parse URI, %v", err)
 	}
 
-	slackcat_config := u.Path
+	q := u.Query()
 
-	writer, err := slackcat.NewWriter(slackcat_config)
+	wh_uri := q.Get("webhook")
+	wh_channel := q.Get("channel")
+
+	// Handle older configs which assumed this package was using whosonfirst/slackcat
+	// to send messages
+
+	if wh_uri == "" || wh_channel == "" {
+
+		config_path := u.Path
+		config_r, err := os.Open(config_path)
+
+		if err != nil {
+			return nil, fmt.Errorf("Failed to open %s, %w", config_path, err)
+		}
+
+		defer config_r.Close()
+
+		var cfg *SlackcatConfig
+
+		dec := json.NewDecoder(config_r)
+		err = dec.Decode(&cfg)
+
+		if err != nil {
+			return nil, fmt.Errorf("Failed to decode %s, %w", config_path, err)
+		}
+
+		wh_uri = cfg.WebhookUrl
+		wh_channel = cfg.Channel
+	}
+
+	wr, err := writer.NewSlackWriter(wh_uri, wh_channel)
 
 	if err != nil {
 		return nil, err
 	}
 
 	slack := SlackDispatcher{
-		writer: writer,
+		writer: wr,
 	}
 
 	return &slack, nil
