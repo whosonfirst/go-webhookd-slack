@@ -51,7 +51,7 @@ github.com/sfomuseum/go-flags/flagset
 ## explicit; go 1.18
 github.com/sfomuseum/go-slack
 github.com/sfomuseum/go-slack/writer
-# github.com/whosonfirst/go-webhookd/v3 v3.1.2
+# github.com/whosonfirst/go-webhookd/v3 v3.2.0
 ## explicit; go 1.18
 github.com/whosonfirst/go-webhookd/v3
 github.com/whosonfirst/go-webhookd/v3/config

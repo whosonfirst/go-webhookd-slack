@@ -1317,8 +1317,8 @@ github.com/vishvananda/netns v0.0.0-20200728191858-db3c7e526aae/go.mod h1:DD4vA1
 github.com/vishvananda/netns v0.0.0-20210104183010-2eb08e3e575f/go.mod h1:DD4vA1DwXk04H54A1oHXtwZmA0grkVMdPxx/VGLCah0=
 github.com/vultr/govultr/v2 v2.17.2/go.mod h1:ZFOKGWmgjytfyjeyAdhQlSWwTjh2ig+X49cAp50dzXI=
 github.com/whosonfirst/go-sanitize v0.1.0/go.mod h1:p/emgbafMM0p5iVAz2XWwecYPl06Tw4Jos9rhTKIrt8=
-github.com/whosonfirst/go-webhookd/v3 v3.1.2 h1:vRxw7uNTSOy1HRZ9ZwpxrnMo9FKNsXlC6ZUCAwGVQ8A=
-github.com/whosonfirst/go-webhookd/v3 v3.1.2/go.mod h1:IGC+3aQ6OHoRi8QiGex5FNrKLDh6eIp10Bk1/5w3sGQ=
+github.com/whosonfirst/go-webhookd/v3 v3.2.0 h1:eEk1c5bNKUcrt8QwO6e5tNu5Lx0+4wxnwak1NTpW75w=
+github.com/whosonfirst/go-webhookd/v3 v3.2.0/go.mod h1:IGC+3aQ6OHoRi8QiGex5FNrKLDh6eIp10Bk1/5w3sGQ=
 github.com/willf/bitset v1.1.11-0.20200630133818-d5bec3311243/go.mod h1:RjeCKbqT1RxIR/KWY6phxZiaY1IyutSBfGjNPySAYV4=
 github.com/willf/bitset v1.1.11/go.mod h1:83CECat5yLh5zVOf4P1ErAgKA5UDvKtgyUABdr3+MjI=
 github.com/xdg-go/pbkdf2 v1.0.0/go.mod h1:jrpuAogTd400dnrH08LKmI/xc1MbPOebTwRqcT5RDeI=

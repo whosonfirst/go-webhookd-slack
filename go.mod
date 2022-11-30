@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/sfomuseum/go-flags v0.10.0
 	github.com/sfomuseum/go-slack v1.1.2
-	github.com/whosonfirst/go-webhookd/v3 v3.1.2
+	github.com/whosonfirst/go-webhookd/v3 v3.2.0
 )
 
 require (
