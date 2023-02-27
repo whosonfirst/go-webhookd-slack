@@ -346,7 +346,11 @@ null://
 
 ## Halting a `webhookd` processing flow
 
-As of `go-webhookd` v3.2.0 it is possible to "halt" a processing flow in mid-stream. This occurs is a receiver or transformation returns a `webhookd.WebhookError` with `Code` property whose value is `webhookd.HaltEvent`. These errors are treated as non-fatal but are treated as a signal to end processing and return immediately. Support for `webhookd.HaltEvent` in dispatchers is also enabled but they do not stop processing since dispatchers are invoked asynchronously.
+As of `go-webhookd` v3.2.0 it is possible to "halt" a processing flow in mid-stream.
+
+This occurs if a receiver or transformation returns a `webhookd.WebhookError` with `Code` property whose value is `webhookd.HaltEvent`. These errors are treated as non-fatal but are treated as a signal to end processing and return immediately.
+
+Support for `webhookd.HaltEvent` in dispatchers is also enabled but they do not stop processing since dispatchers are invoked asynchronously.
 
 ## Testing
 
@@ -399,13 +403,14 @@ package main
 
 import (
 	"context"
+	"log"
+	"os"
+
 	"github.com/sfomuseum/go-flags/flagset"
 	"github.com/whosonfirst/go-webhookd/v3/config"
 	"github.com/whosonfirst/go-webhookd/v3/daemon"
 	_ "github.com/whosonfirst/go-webhookd-aws"
 	_ "github.com/whosonfirst/go-webhookd-github"		
-	"log"
-	"os"
 )
 
 func main() {
@@ -434,4 +439,5 @@ func main() {
 ## Related
 
 * https://github.com/aaronland/go-http-server
+* https://github.com/sfomuseum/runtimevar
 * https://gocloud.dev/howto/runtimevar
