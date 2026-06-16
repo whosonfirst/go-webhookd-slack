@@ -10,7 +10,7 @@ Before you begin please [read the go-webhookd documentation](https://github.com/
 
 ```
 import (
-	_ "github.com/go-webhookd-slack"
+	_ "github.com/go-webhookd-slack/4"
 )
 ```
 
