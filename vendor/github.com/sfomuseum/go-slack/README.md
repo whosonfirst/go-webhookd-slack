@@ -49,13 +49,17 @@ go build -mod vendor -o bin/to-slack cmd/to-slack/main.go
 Post a message to a Slack channel. The principal difference between `to-slack` and other similar tools is the use of [Go Cloud runtimevar URIs](https://gocloud.dev/howto/runtimevar) to define Slack Webhook URIs. This allows these otherwise sensitive values to be stored and retrieved from a variety of different storage mechanisms.
 
 ```
-> ./bin/to-slack -h
+$> ./bin/to-slack -h
 Post a message to a Slack channel.
 Usage:
 	 ./bin/to-slack [options] message
 Valid options are:
   -channel string
     	A valid Slack channel to post to.
+  -message-per-line
+    	Send a message for each line when reading input from STDIN.
+  -prefix string
+    	Optional prefix to prepend each message with.
   -stdin
     	Read input from STDIN
   -webhook-uri string
