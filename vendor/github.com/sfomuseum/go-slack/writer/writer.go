@@ -4,8 +4,9 @@ package writer
 import (
 	"context"
 	"fmt"
-	"github.com/sfomuseum/go-slack"
 	"io"
+
+	"github.com/sfomuseum/go-slack"
 )
 
 // type SlackWriter implements the io.Writer interface for posting messages to Slack.

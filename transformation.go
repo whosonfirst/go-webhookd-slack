@@ -6,10 +6,10 @@ import (
 	"bufio"
 	"bytes"
 	"context"
-	"github.com/whosonfirst/go-webhookd/v3"
-	"github.com/whosonfirst/go-webhookd/v3/transformation"
-	_ "log"
 	"strings"
+
+	"github.com/whosonfirst/go-webhookd/v4"
+	"github.com/whosonfirst/go-webhookd/v4/transformation"	
 )
 
 func init() {

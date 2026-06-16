@@ -5,10 +5,11 @@ package slack
 
 import (
 	"context"
-	"github.com/whosonfirst/go-webhookd/v3"
-	"github.com/whosonfirst/go-webhookd/v3/receiver"
 	"io"
 	"net/http"
+
+	"github.com/whosonfirst/go-webhookd/v4"
+	"github.com/whosonfirst/go-webhookd/v4/receiver"	
 )
 
 func init() {

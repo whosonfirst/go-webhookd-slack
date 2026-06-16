@@ -4,12 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/sfomuseum/go-slack/writer"
-	"github.com/whosonfirst/go-webhookd/v3"
-	"github.com/whosonfirst/go-webhookd/v3/dispatcher"
 	"io"
 	"net/url"
 	"os"
+
+	"github.com/sfomuseum/go-slack/writer"
+	"github.com/whosonfirst/go-webhookd/v4"
+	"github.com/whosonfirst/go-webhookd/v4/dispatcher"	
 )
 
 func init() {
